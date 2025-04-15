@@ -1,18 +1,15 @@
-# Use the official Python image from DockerHub
-FROM python:3.9-slim
+# Use official Python image
+FROM python:3.10-slim
 
-# Set working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy the requirements file and install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code
+# Copy files
 COPY . .
 
-# Expose the port for your application (change if using a different port)
-EXPOSE 5000
+# Install dependencies
+RUN pip install --upgrade pip \
+ && pip install -r requirements.txt
 
-# Define the command to run your app (adjust as per your app structure)
-CMD ["python", "main.py"]
+# Set the default command
+CMD ["python", "app/main.py"]

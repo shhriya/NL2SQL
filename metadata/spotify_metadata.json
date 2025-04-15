@@ -1,0 +1,21 @@
+{
+    "table_name": "spotify_2023",
+    "columns": [
+      {"name": "track_name", "type": "STRING", "description": "Name of the track"},
+      {"name": "artists_name", "type": "STRING", "description": "Names of the artists"},
+      {"name": "artist_count", "type": "INTEGER", "description": "Number of artists"},
+      {"name": "released_year", "type": "INTEGER", "description": "Release year"},
+      {"name": "released_month", "type": "INTEGER", "description": "Release month"},
+      {"name": "released_day", "type": "INTEGER", "description": "Release day"},
+      {"name": "in_spotify_playlists", "type": "INTEGER", "description": "Count in Spotify playlists"},
+      {"name": "in_spotify_charts", "type": "INTEGER", "description": "Chart count in Spotify"},
+      {"name": "streams", "type": "INTEGER", "description": "Total streams"},
+      {"name": "in_apple_playlists", "type": "INTEGER", "description": "Apple Music playlists"},
+      {"name": "in_apple_charts", "type": "INTEGER", "description": "Apple Music chart appearances"},
+      {"name": "in_deezer_playlists", "type": "INTEGER", "description": "Deezer playlists"},
+      {"name": "in_deezer_charts", "type": "INTEGER", "description": "Deezer chart appearances"},
+      {"name": "in_shazam_charts", "type": "INTEGER", "description": "Shazam chart appearances"},
+      {"name": "bpm", "type": "INTEGER", "description": "Beats per minute"}
+    ]
+  }
+  

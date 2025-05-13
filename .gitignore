@@ -1,5 +1,5 @@
 # Virtual environment
-venv/
+# venv/
 
 # Python bytecode files
 *.pyc
@@ -7,7 +7,7 @@ venv/
 *.pyd
 
 # Folder for Google Cloud credentials
-api-project-456117-7a3048a0cec2.json
+service.json
 
 # Jenkins home directory (for persistent storage)
 jenkins_home/

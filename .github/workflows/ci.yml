@@ -7,11 +7,17 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Say Hello
-      run: echo "✅ GitHub Actions is working!"
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build and run tests in Docker
+      run: |
+        docker build -t nl2sql-test .
+        docker run --rm nl2sql-test

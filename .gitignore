@@ -9,6 +9,8 @@
 # Folder for Google Cloud credentials
 service.json
 
+venv/
+
 # Jenkins home directory (for persistent storage)
 jenkins_home/
 
